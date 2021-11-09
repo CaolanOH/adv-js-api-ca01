@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../JavaScriptExercise/mflix-js"
+		},
+		{
+			"path": "../../ExpressMongoDB"
+		}
+	],
+	"settings": {}
+}

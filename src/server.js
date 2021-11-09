@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 
-//import usersRouter from './routes/users.router.js';
-//import moviesRouter from './routes/movies.router.js';
+import usersRouter from './routes/users.router.js';
+import postsRouter from './routes/posts.router.js';
 //import commentsRouter from './routes/comments.router.js';
 
 const app = express();
@@ -13,8 +13,8 @@ app.use(cors());
 
 //app.use('/Hello');
 
-//app.use('/users', usersRouter);
-//app.use('/movies', moviesRouter);
+app.use('/users', usersRouter);
+app.use('/posts', postsRouter);
 //app.use('/comments', commentsRouter);
 
 export default app;
