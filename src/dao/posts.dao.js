@@ -1,7 +1,8 @@
 import { ObjectId } from 'bson';
 let posts;
 let postsdb;
-const DEFAULT_SORT = [["title", -1]]
+const DEFAULT_SORT = [["date", -1]]
+
 class PostsDAO{
 
 	// Connection 

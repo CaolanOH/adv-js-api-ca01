@@ -55,15 +55,15 @@ export default class PostsContorller {
 		
 			const title = req.body.title;
 			const author = req.body.author;
-			const permalink = req.body.permalink;
 			const body = req.body.body; 
+			const permalink = req.body.permalink;
 			const date = new Date();
 
 			const postResponse = await PostsDAO.createPost(
 				title,
 				author,
-				permalink,
 				body,
+				permalink,
 				date,
 			)
 			res.json({ status : "success", postResponse })
